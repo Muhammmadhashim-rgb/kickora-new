@@ -6,7 +6,7 @@ function ReviewsCarts(props) {
   return (
     <div>
       <div className='reviewsbackground  2xl-w-[29rem] xl-w-[22rem] md-w-[22rem] bg-white  rounded-[2rem]'>
-        <div className='2xl:p-[30px] xl:p-[25px] lg:p-[20px] md:p-[20px] sm:p-[15px]'>
+        <div className='2xl:p-[30px] xl:p-[25px] lg:p-[20px] md:p-[20px] sm:p-[15px] xs:p-[10px]'>
           <div className='flex items-center justify-between'>
             <h1 className='font-rubik 2xl:text-[1.5rem] xl:text-[1.4rem] lg:text-[1.2rem] font-[600] text-[#232321]'>{props.h1}</h1>
             <img className='lg:w-[25%] md:w-[30%] sm:w-[30%]' src={props.reviewProflieImage} alt="" />

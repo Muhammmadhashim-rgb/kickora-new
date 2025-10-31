@@ -19,7 +19,7 @@ function App() {
       <div>
         <Categories />
       </div>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+      <div className="container mx-auto px-4 sm:px-6 xs:px-4  lg:px-12">
         <Reviews />
       </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 mt-[12%]">

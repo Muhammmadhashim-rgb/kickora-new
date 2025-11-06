@@ -1,7 +1,15 @@
 import React, { Component } from 'react'
+import { useNavigate } from 'react-router-dom'
+const HeroSection=()=> {
 
-export default class HeroSection extends Component {
-   render() {
+
+const navigate=useNavigate();
+
+
+const handleClick=()=>{
+   navigate('/shop')
+}
+
       return (
          <div>
             <h1 className="md:text-[7rem]  xs:text-[3rem]  sm:text-[6rem]  lg:text-[9rem] xl:text-[12rem] 2xl:text-[15rem]  text-center leading-none font-bold uppercase text-[#232321] font-rubik">
@@ -22,7 +30,7 @@ export default class HeroSection extends Component {
                </h1>
                <p className='absolute 2xl:top-[70%] md:top-[66%] sm:top-[65%] xs:top-[63%] xl:top-[71%] lg:top-[68%]  left-[5%]  text-white font-open-sans 2xl:text-[1.5rem] xl:text-[1.2rem] lg:text-[1.1rem] sm:text-[0.9rem] xs:text-[0.9rem] font-normal leading-normal'>Nike introducing the new air max for <span className='absolute 2xl:top-[75%] md:top-[92%]     xl:top-[76%]  lg:top-[92%] sm:top-[100%] xs:top-[100%] left-[0%] '> everyone's comfort</span></p>
 
-               <button className="absolute top-[80%] left-[5%] rounded-md bg-[#005F73] hover:bg-black sm:px-[0.9rem] xs:px-[0.8rem] xs:py-[0.4rem]  sm:py-[0.5rem] md:px-[0.9rem] md:py-[0.5rem] 2xl:px-8 2xl:py-4 xl:px-8 xl:py-4 lg:px-8 lg:py-4 flex justify-center items-center gap-1 text-white font-rubik 2xl:text-[1rem] xl:text-[1rem] lg:text-[1rem]  md:text-[0.8rem] sm:text-[0.8rem]  xs:text-[0.8rem]  leading-normal tracking-[0.01563rem] uppercase transition-all duration-300">
+               <button onClick={handleClick} className="absolute top-[80%] left-[5%] rounded-md bg-[#005F73] hover:bg-black sm:px-[0.9rem] xs:px-[0.8rem] xs:py-[0.4rem]  sm:py-[0.5rem] md:px-[0.9rem] md:py-[0.5rem] 2xl:px-8 2xl:py-4 xl:px-8 xl:py-4 lg:px-8 lg:py-4 flex justify-center items-center gap-1 text-white font-rubik 2xl:text-[1rem] xl:text-[1rem] lg:text-[1rem]  md:text-[0.8rem] sm:text-[0.8rem]  xs:text-[0.8rem]  leading-normal tracking-[0.01563rem] uppercase transition-all duration-300">
                   Shop now
                </button>
 
@@ -38,5 +46,7 @@ export default class HeroSection extends Component {
 
          </div>
       )
-   }
+   
 }
+
+export default HeroSection
